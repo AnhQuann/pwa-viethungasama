@@ -1,0 +1,38 @@
+.form-dialog {
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.import-image-form {
+  margin-top: 1rem;
+  width: 85px;
+  height: 85px;
+  border: 1px dashed black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.import-image-form:hover {
+  cursor: pointer;
+  background-color: #BEC5CF;
+  transition: 0.3s;
+}
+
+.import-image-form img {
+  /* position: absolute; */
+  width: 85px;
+  height: 85px;
+}
+
+.tooltip-delete-image {
+  padding: 0 !important;
+  margin-top: 38px !important;
+  margin-left: -62px !important;
+  height: 45px !important;
+  width: 45px !important;
+}
+
+.opacity-20 {
+  filter: opacity(20%);
+}
