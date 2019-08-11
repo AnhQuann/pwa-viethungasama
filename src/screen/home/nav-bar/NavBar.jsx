@@ -28,8 +28,8 @@ export default function IconLabelTabs() {
     <MuiThemeProvider theme={theme}>
       <Paper square className={classes.root}>
         <Grid container spacing={0}>
-          <Grid item md={2}></Grid>
-          <Grid item md={8} className={classes.navContent}>
+          <Grid item md={1}></Grid>
+          <Grid item md={10} className={classes.navContent}>
             <img className={classes.shopLogo} src={ShopLogo} alt="Shop Logo"/>
             <div className={classes.searchBar}>
               <SearchBar placeholder="Bạn muốn tìm gì..." />
@@ -50,7 +50,7 @@ export default function IconLabelTabs() {
               <Tab className={getStyle(value === 3)} icon={<img className={classes.socialLogo} src={YoutubeLogo} alt="Youtube" />} label="Youtube" />
             </Tabs>
           </Grid>
-          <Grid item md={2}></Grid>
+          <Grid item md={1}></Grid>
         </Grid>
       </Paper>
     </MuiThemeProvider>

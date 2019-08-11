@@ -323,8 +323,7 @@ export default function EnhancedTable() {
     refreshTable();
   }, [])
   if (!rows) return "";
-  // if (!rows[0]) return "";
-  // console.log(rows[0].productImage.map(img => `${ROOT_HOST}/${img.imageUrl}`));
+  
   return (
     <div className={classes.root}>
       <Paper className={classes.paper}>
@@ -390,7 +389,7 @@ export default function EnhancedTable() {
                                 {row.title}
                               </TableCell>
                               <TableCell align="left">
-                                  <img
+                                  {/* <img
                                     key={index}
                                     style={{
                                       width: 50,
@@ -399,7 +398,7 @@ export default function EnhancedTable() {
                                     }}
                                     src={`${ROOT_HOST}/${row.productImage[0].imageUrl}`}
                                     alt="ảnh xe"
-                                  />
+                                  /> */}
                               </TableCell>
                               <TableCell align="left">{row.price.toLocaleString('it-IT', {style : 'currency', currency : 'VND'})}</TableCell>
                               <TableCell align="left">{row.category}</TableCell>
@@ -459,7 +458,7 @@ export default function EnhancedTable() {
           onChangeRowsPerPage={handleChangeRowsPerPage}
         />
       </Paper>
-      <FullScreenDialog editRow={editRow} openForm={openForm} handleOpenForm={handleOpenForm} />
+      <FullScreenDialog refreshTable={refreshTable} editRow={editRow} openForm={openForm} handleOpenForm={handleOpenForm} />
     </div>
   );
 }

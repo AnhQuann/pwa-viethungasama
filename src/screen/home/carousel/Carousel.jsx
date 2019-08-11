@@ -1,10 +1,21 @@
-import React from 'react'
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBContainer } from
 "mdbreact";
 
+const useStyles = makeStyles({
+  container: {
+    margin: "10px 0px",
+    maxWidth: "100%",
+    padding: 0,
+  }
+});
+
+
 export default function CarouselPage() {
+  const classes = useStyles();
   return (
-    <MDBContainer style={{ margin: "10px 0px", width: "100%" }}>
+    <MDBContainer className={classes.container}>
       <MDBCarousel
         activeItem={1}
         length={3}
