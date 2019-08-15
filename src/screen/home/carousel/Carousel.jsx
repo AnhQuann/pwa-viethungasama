@@ -28,8 +28,9 @@ export default function CarouselPage() {
             <MDBView>
               <img
                 className="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
+                src="https://wallpaperplay.com/walls/full/1/2/3/195381.jpg"
                 alt="First slide"
+                style={{ height: 561 }}
               />
             </MDBView>
           </MDBCarouselItem>
@@ -37,8 +38,9 @@ export default function CarouselPage() {
             <MDBView>
               <img
                 className="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
+                src="https://wallpaperaccess.com/full/225325.jpg"
                 alt="Second slide"
+                style={{ height: 561 }}
               />
             </MDBView>
           </MDBCarouselItem>
@@ -46,8 +48,9 @@ export default function CarouselPage() {
             <MDBView>
               <img
                 className="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
+                src="https://wallpaperplay.com/walls/full/e/b/4/195408.jpg"
                 alt="Third slide"
+                style={{ height: 561 }}
               />
             </MDBView>
           </MDBCarouselItem>

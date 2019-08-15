@@ -6,12 +6,12 @@ import { Switch, Route } from 'react-router-dom';
 import './App.css'
 
 import Admin from './screen/admin/Admin';
-import Home from './screen/home/Home';
+import HomePage from './screen/home/HomePage';
 
 function App() {
   return (
     <Switch>
-      <Route path='/' component={Home} exact />
+      <Route path='/' component={HomePage} exact />
       <Route path='/iadmin' component={Admin} />
     </Switch>
   );

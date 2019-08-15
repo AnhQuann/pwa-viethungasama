@@ -389,7 +389,7 @@ export default function EnhancedTable() {
                                 {row.title}
                               </TableCell>
                               <TableCell align="left">
-                                  {/* <img
+                                  <img
                                     key={index}
                                     style={{
                                       width: 50,
@@ -398,7 +398,7 @@ export default function EnhancedTable() {
                                     }}
                                     src={`${ROOT_HOST}/${row.productImage[0].imageUrl}`}
                                     alt="ảnh xe"
-                                  /> */}
+                                  />
                               </TableCell>
                               <TableCell align="left">{row.price.toLocaleString('it-IT', {style : 'currency', currency : 'VND'})}</TableCell>
                               <TableCell align="left">{row.category}</TableCell>

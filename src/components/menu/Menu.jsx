@@ -24,7 +24,7 @@ export default function Menu(props) {
         className={classes.root}
       >
         {menuItems.map((item, index) => (
-          <BottomNavigationAction className={getStyle(value === index)} label={item.name} icon={item.icon} />        
+          <BottomNavigationAction key={`menu-item-${index}`} className={getStyle(value === index)} label={item.name} icon={item.icon} />        
         ))}
       </BottomNavigation>
     </MuiThemeProvider>

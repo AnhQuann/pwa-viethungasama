@@ -255,7 +255,7 @@ export default function FullScreenDialog(props) {
                 variant="contained"
                 color="primary"
               >Làm lại</Button>
-              <Button type="submit" size="large" variant="contained" color="secondary">Lưu</Button>
+              <Button type="submit" disabled={imgUrls.length > 0 ? false : true} size="large" variant="contained" color="secondary">Lưu</Button>
             </div>
           </form>
         </Paper>

@@ -2,10 +2,14 @@ import { makeStyles } from '@material-ui/core/styles';
 import { createMuiTheme } from "@material-ui/core/styles";
 
 
-export const useStyles = makeStyles({
+export const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
     backgroundColor: "#0090e6",
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
   },
   indicator: {
     backgroundColor: "#F8F8F8"
@@ -38,7 +42,7 @@ export const useStyles = makeStyles({
   tabs: {
     flex: 2
   }
-});
+}));
 
 export const theme = createMuiTheme({
   overrides: {

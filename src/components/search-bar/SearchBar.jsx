@@ -30,6 +30,7 @@ const useStyles = makeStyles(theme => ({
   },
   inputRoot: {
     color: '#F3F3F3',
+    width: "100%",
   },
   inputInput: {
     padding: theme.spacing(1, 1, 1, 7),

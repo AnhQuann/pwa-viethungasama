@@ -3,13 +3,15 @@ import { createMuiTheme } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles({
   root: {
-    width: "100%"
+    width: "100%",
+    overflowX: "auto",
   },
   menuItemDefault: {
     color: "#a1bbd6"
   },
   menuItemActive: {
-    color: "#0090E6 !important"
+    color: "#0090E6 !important",
+    fontWeight: "bold"
   },
 });
 
@@ -22,7 +24,10 @@ export const theme = createMuiTheme({
     },
     MuiBottomNavigationAction: {
       root: {
-        padding: "6px 0px 8px"
+        padding: "6px 0px 8px",
+        outline: "none !important",
+        flex: 1,
+        maxWidth: "unset"
       }
     }
   }
